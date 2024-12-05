@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Club Registration Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('robot.jpg') no-repeat center center fixed; 
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #fff; 
+    }
+    .form-container {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+    }
+    label {
+      font-weight: bold;
+    }
+   
+    .navbar-custom {
+      background-color: red;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .navbar-custom,.navbar-brand, 
+    .navbar-custom, .nav-link {
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+    .navbar-custom, .nav-link:hover {
+      color: lightpink;
+    }
+    .navbar-custom, .nav-link.active {
+      color: lightgoldenrodyellow;
+      text-decoration: underline;
+    }
+    
+    .btn-custom {
+      background-color: white;
+      color: mediumpurple;
+      border: 1px solid mediumpurple;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn-custom:hover {
+      background-color: mediumpurple;
+      color: white;
+    }
+    
+    
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">OBMC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://obmontessori.edu.ph" target="_blank">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://obmontessori.edu.phcontact-us" target="_blank">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.google.com.ph/maps/place/Operation+Brotherhood+Montessori+Center/@15.1373183,120.5945366,17z/data=!3m1!4b1!4m6!3m5!1s0x3396f237c7d7ec39:0xa3cae61a3f0a87ea!8m2!3d15.1373131!4d120.5971115!16zL20vMGY1MHM2?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">LOCATE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <div class="container mt-5">
+    <div class="form-container">
+      <h1 class="text-center mb-4">Robotics Club Registration Form</h1>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" placeholder="Enter your age">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="phone">Phone Number</label>
+            <input type="telephone" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Preferred Robotics Topics</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="programming" value="Programming">
+            <label class="form-check-label" for="programming">Programming</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="electronics" value="Electronics">
+            <label class="form-check-label" for="electronics">Electronics</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="mechanicalDesign" value="Mechanical Design">
+            <label class="form-check-label" for="mechanicalDesign">Mechanical Design</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Robotics Experience Level</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experienceLevel" id="beginner" value="Beginner">
+            <label class="form-check-label" for="beginner">Beginner</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experienceLevel" id="intermediate" value="Intermediate">
+            <label class="form-check-label" for="intermediate">Intermediate</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experienceLevel" id="advanced" value="Advanced">
+            <label class="form-check-label" for="advanced">Advanced</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="project">Preferred Robotics Project</label>
+          <select class="form-control" id="project">
+            <option selected>Choose a project...</option>
+            <option value="Robot Glitch">Robot Glitch</option>
+            <option value="Robot Talking">Robot Talking</option>
+            <option value="Robotic Arm">Robotic Arm</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="interest">Statement of Interest</label>
+          <textarea class="form-control" id="interest" rows="3" placeholder="Why are you interested in joining?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom">Submit</button>
+        <button type="reset" class="btn btn-custom">Reset</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
